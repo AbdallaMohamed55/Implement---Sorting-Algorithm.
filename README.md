@@ -34,6 +34,30 @@ Sorting is the process of arranging data in a specific order, typically ascendin
    - Fast and efficient for large datasets.  
    - Time Complexity: Best/Average O(n log n), Worst O(n²).
 
+## Algorithm
+
+### Selection Sort
+1. Input the number of elements `n`.  
+2. Input the array elements `arr[]`.  
+3. For `i = 0` to `n-2` (iterate through the array):  
+   - Set `minIndex = i`.  
+   - For `j = i+1` to `n-1` (search the unsorted part):  
+     - If `arr[j] < arr[minIndex]`, set `minIndex = j`.  
+   - If `minIndex != i`, swap `arr[i]` and `arr[minIndex]`.  
+4. Repeat until the array is sorted.  
+5. Display the sorted array.
+
+### Bubble Sort
+1. Input the number of elements `n`.  
+2. Input the array elements `arr[]`.  
+3. For `i = 0` to `n-2` (outer loop for passes):  
+   - Set `swapped = false`.  
+   - For `j = 0` to `n-i-2` (inner loop for adjacent comparison):  
+     - If `arr[j] > arr[j+1]`, swap them and set `swapped = true`.  
+   - If `swapped == false` after inner loop, break (array is already sorted).  
+4. Repeat until the array is sorted.  
+5. Display the sorted array.
+
 ## Procedure
 1. Understand the logic of the chosen sorting algorithm.  
 2. Open a programming IDE or online compiler and create a new project/file.  
